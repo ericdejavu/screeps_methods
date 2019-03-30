@@ -15,10 +15,10 @@ function buildWorkerByList(base, list, role) {
 
 function buildWorker(base, type, MajorRole) {
 	switch(type) {
-		case NORMAL: 	buildWorkerByList(base, [WORK, CARRY, MOVE], role);break;
-		case CAPACITY: 	buildWorkerByList(base, [WORK, CARRY, CARRY, MOVE], role);break;
-		case FAST: 		buildWorkerByList(base, [WORK, CARRY, MOVE, MOVE], role);break;
-		case HARDWORK: 	buildWorkerByList(base, [WORK, WORK, CARRY, MOVE], role);break;
+		case NORMAL: 	buildWorkerByList(base, [WORK, CARRY, MOVE], MajorRole);break;
+		case CAPACITY: 	buildWorkerByList(base, [WORK, CARRY, CARRY, MOVE], MajorRole);break;
+		case FAST: 		buildWorkerByList(base, [WORK, CARRY, MOVE, MOVE], MajorRole);break;
+		case HARDWORK: 	buildWorkerByList(base, [WORK, WORK, CARRY, MOVE], MajorRole);break;
 	}
 }
 
